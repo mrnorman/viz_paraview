@@ -2,7 +2,7 @@ ssh -Y andes.olcf.ornl.gov
 
 module load paraview/5.13.3-osmesa imagemagick
 
-[imn@andes-login8:/path/to/data] 8-) cat job_andes.sh 
+[imn@andes-login8:/lustre/orion/stf006/scratch/imn/turbine_viz/blades/paraview] 8-) cat job_andes.sh 
 #!/bin/bash
 #SBATCH -A stf006
 #SBATCH -J vizzzzz
