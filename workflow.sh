@@ -18,5 +18,6 @@ srun -n 1 -c 32 --gpus-per-task=1 --gpu-bind=closest /sw/andes/paraview/5.13.3-o
 [imn@andes-login8:/lustre/orion/stf006/scratch/imn/turbine_viz/blades/paraview] 8-) sbatch job_andes.sh
 
 # Copy data to local machine
+# Install ffmpeg on your machine, e.g., snap install ffmpeg
 
 > ffmpeg -framerate 30 -i blades_animation.%04d.png -c:v libx264 -crf 18 blades_video.mp4
