@@ -80,7 +80,7 @@ gradient1.ComputeQCriterion = 1
 # create a new 'Contour'
 contour1 = Contour(registrationName='Contour1', Input=gradient1)
 contour1.ContourBy = ['POINTS', 'Q Criterion']
-contour1.Isosurfaces = [0.3]
+contour1.Isosurfaces = [0.3]  #  0.003 for actuator disks IIRC because the tube vortices are much weaker
 contour1.PointMergeMethod = 'Uniform Binning'
 
 # ----------------------------------------------------------------
